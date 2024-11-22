@@ -1,0 +1,13 @@
+[Unit]
+Description=Daily Time Synchronization Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/time_autoset.sh
+Restart=always
+RestartSec=21600
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
