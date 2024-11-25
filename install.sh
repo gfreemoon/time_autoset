@@ -1,4 +1,5 @@
 #!/bin/bash
+mount -o rw,remount /
 
 curl -o /usr/local/bin/time_autoset.sh 'https://raw.githubusercontent.com/gfreemoon/time_autoset/refs/heads/main/time_autoset.sh'
 chmod 755 /usr/local/bin/time_autoset.sh
